@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Language file for block "dyslexic"
+ * Version details
  *
  * @package    block_dyslexic
  * @copyright  2016 onwards Éric Bugnet {@link http://eric.bugnet.fr/}
@@ -23,10 +23,9 @@
  * @author     Éric Bugnet
  */
 
-$string['pluginname'] = 'Mode dyslexique';
-$string['opendyslexic_font'] = 'Utiliser la police open-dyslexic';
-$string['defaut_font'] = 'Utiliser la police par défaut';
-$string['effect'] = 'Envie de connaitre l\'effet de la dyslexie ?';
-$string['readmore'] = 'En savoir plus sur la police OpenDyslexic';
-$string['under_construction'] = '<hr>Cette fonctionnalité est en cours de développement, tout ne fonctionne peut être pas encore comme prévu !';
-$string['dyslexic:addinstance']= 'Ajouter un bloc Mode dyslexic';
+defined('MOODLE_INTERNAL') || die();
+
+$plugin->version   = 2016030500;        // The current plugin version (Date: YYYYMMDDXX).
+$plugin->requires  = 2015111000;        // Requires this Moodle version.
+$plugin->component = 'block_dyslexic';
+$plugin->maturity = MATURITY_ALPHA;

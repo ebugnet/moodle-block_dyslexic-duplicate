@@ -52,8 +52,7 @@ if (dys == 'true') {
 			body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea,select \
 				{font-family: opendyslexic;}\
  			\
-			");
-	x.appendChild(t);
+			");	x.appendChild(t);
 	document.head.appendChild(x);
 } else {
 	//document.write('<div>Dyslexic : OFF</div>')

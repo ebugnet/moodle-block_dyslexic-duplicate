@@ -29,4 +29,4 @@ $string['defaut_font'] = 'Utiliser la police par défaut';
 $string['effect'] = 'Envie de connaitre l\'effet de la dyslexie ?';
 $string['readmore'] = 'En savoir plus sur la police OpenDyslexic';
 $string['under_construction'] = '<hr>Cette fonctionnalité est en cours de développement, tout ne fonctionne peut être pas encore comme prévu !';
-$string['dyslexic:addinstance']= 'Ajouter un bloc Mode dyslexic';
+

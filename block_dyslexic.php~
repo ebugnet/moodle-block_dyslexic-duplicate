@@ -71,7 +71,7 @@ class block_dyslexic extends block_base {
 		$this->content->footer .= '</br>';
 		$this->content->footer .= '<a href="http://opendyslexic.org/" target="_blank">'.get_string("readmore", "block_dyslexic").'</a>';
 		$this->content->footer .= '</br>';
-		//$this->content->footer .= '<i>'.get_string("under_construction", "block_dyslexic").'</i>';
+		$this->content->footer .= '<i>'.get_string("under_construction", "block_dyslexic").'</i>';
         return $this->content;
     }
 }

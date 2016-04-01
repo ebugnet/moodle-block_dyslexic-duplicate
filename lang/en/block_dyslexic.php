@@ -29,3 +29,4 @@ $string['defaut_font'] = 'Use default font';
 $string['effect'] = 'Want to know the effect of dyslexia ?';
 $string['readmore'] = 'Read more on OpenDyslexic font';
 $string['under_construction'] = 'This block is in development, you may see some problems !';
+$string['dyslexic:addinstance']= 'Add a block Mod dyslexic';

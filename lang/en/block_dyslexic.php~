@@ -23,10 +23,9 @@
  * @author     Éric Bugnet
  */
 
-$string['pluginname'] = 'Mode dyslexique';
-$string['opendyslexic_font'] = 'Utiliser la police open-dyslexic';
-$string['defaut_font'] = 'Utiliser la police par défaut';
-$string['effect'] = 'Envie de connaitre l\'effet de la dyslexie ?';
-$string['readmore'] = 'En savoir plus sur la police OpenDyslexic';
-$string['under_construction'] = '<hr>Cette fonctionnalité est en cours de développement, tout ne fonctionne peut être pas encore comme prévu !';
-$string['dyslexic:addinstance']= 'Ajouter un bloc Mode dyslexic';
+$string['pluginname'] = 'Dyslexic mod';
+$string['opendyslexic_font'] = 'Use open-dyslexic font';
+$string['defaut_font'] = 'Use default font';
+$string['effect'] = 'Want to know the effect of dyslexia ?';
+$string['readmore'] = 'Read more on OpenDyslexic font';
+$string['under_construction'] = 'This block is in development, you may see some problems !';
