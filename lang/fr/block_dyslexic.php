@@ -24,9 +24,9 @@
  */
 
 $string['pluginname'] = 'Mode dyslexique';
-$string['opendyslexic_font'] = 'Utiliser la police open-dyslexic';
-$string['defaut_font'] = 'Utiliser la police par défaut';
+$string['intro'] = 'La police OpenDyslexic améliore la lisibilité pour les lecteurs dyslexiques.</br>Quelle police voulez-vous utiliser ?';
+$string['opendyslexic_font'] = 'OpenDyslexic';
+$string['defaut_font'] = 'Police par défaut';
 $string['effect'] = 'Envie de connaitre l\'effet de la dyslexie ?';
 $string['readmore'] = 'En savoir plus sur la police OpenDyslexic';
-$string['under_construction'] = '<hr>Cette fonctionnalité est en cours de développement, tout ne fonctionne peut être pas encore comme prévu !';
 $string['dyslexic:addinstance']= 'Ajouter un bloc Mode dyslexic';

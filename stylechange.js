@@ -23,15 +23,17 @@
  // */
 
 
+// Set values to cookies
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + "; " + expires;
-	javascript:window.location.reload();
+    document.cookie = cname + '=' + cvalue + '; ' + expires + '; path=/ ';
+    javascript:window.location.reload();
 } 
 
 
+// Get values from cookies
 function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
@@ -44,9 +46,11 @@ function getCookie(cname) {
 } 
 
 
+
 var dys = getCookie("dyslexic");
+// Check if OpenDysexic font is needed
 if (dys == 'true') {
-	//document.write('<div>Dyslexic : ON</div>');
+	// If needed, change CSS to apply OpenDyslexic font
 	var x = document.createElement("STYLE");
 	var t = document.createTextNode("\
 			body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea,select \
@@ -56,5 +60,5 @@ if (dys == 'true') {
 	x.appendChild(t);
 	document.head.appendChild(x);
 } else {
-	//document.write('<div>Dyslexic : OFF</div>')
+	// Else, nothing to do, but I keep it for test
 }

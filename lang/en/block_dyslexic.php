@@ -24,9 +24,9 @@
  */
 
 $string['pluginname'] = 'Dyslexic mod';
-$string['opendyslexic_font'] = 'Use open-dyslexic font';
-$string['defaut_font'] = 'Use default font';
+$string['intro'] = 'OpenDyslexic increase readability for readers with dyslexia.</br>Which font did you want to use ?';
+$string['opendyslexic_font'] = 'OpenDyslexic font';
+$string['defaut_font'] = 'Default font';
 $string['effect'] = 'Want to know the effect of dyslexia ?';
 $string['readmore'] = 'Read more on OpenDyslexic font';
-$string['under_construction'] = 'This block is in development, you may see some problems !';
 $string['dyslexic:addinstance']= 'Add a block Mod dyslexic';

@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->version   = 2016040100;        // The current plugin version (Date: YYYYMMDDXX).
-$plugin->requires  = 2015111000;        // Requires this Moodle version.
+$plugin->requires  = 2015051100;        // Requires this Moodle version.
 $plugin->component = 'block_dyslexic';
 $plugin->maturity = MATURITY_ALPHA;

@@ -56,13 +56,15 @@ class block_dyslexic extends block_base {
 		
         $this->content = new stdClass();
 		
+		$this->content->text = get_string("intro", "block_dyslexic");
+		
 			// Display Change font button for each case
 			if ($_COOKIE["dyslexic"] == "true") {
-				$this->content->text = '<form>
+				$this->content->text .= '<form>
 				<input type="submit" onclick="setCookie(\'dyslexic\', \'false\', 60);return false;" name="theme" value="'.get_string("defaut_font", "block_dyslexic").'" id="off">
 				</form> ';						
 			} else {
-				$this->content->text = '<form>
+				$this->content->text .= '<form>
 				<input type="submit" onclick="setCookie(\'dyslexic\', \'true\', 60);return false;" name="theme" value="'.get_string("opendyslexic_font", "block_dyslexic").'" id="on">
 				</form> ';	
 			}
@@ -70,8 +72,7 @@ class block_dyslexic extends block_base {
 		$this->content->footer = '<a href="https://geon.github.io/programming/2016/03/03/dsxyliea" target="_blank">'.get_string("effect", "block_dyslexic").'</a>';
 		$this->content->footer .= '</br>';
 		$this->content->footer .= '<a href="http://opendyslexic.org/" target="_blank">'.get_string("readmore", "block_dyslexic").'</a>';
-		$this->content->footer .= '</br>';
-		//$this->content->footer .= '<i>'.get_string("under_construction", "block_dyslexic").'</i>';
+
         return $this->content;
     }
 }
