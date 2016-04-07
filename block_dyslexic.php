@@ -45,7 +45,7 @@ class block_dyslexic extends block_base {
 	}
 
     public function get_content() {
-        global $USER, $PAGE, $CFG;
+        global $USER, $PAGE, $CFG, $COURSE;
 
         if ($this->content !== null) {
             return $this->content;
@@ -60,19 +60,18 @@ class block_dyslexic extends block_base {
 		
 			// Display Change font button for each case
 			if ($_COOKIE["dyslexic"] == "true") {
-				$this->content->text .= '<form>
+				$this->content->text .= '<div align="center"><form>
 				<input type="submit" onclick="setCookie(\'dyslexic\', \'false\', 60);return false;" name="theme" value="'.get_string("defaut_font", "block_dyslexic").'" id="off">
-				</form> ';						
+				</form></div> ';						
 			} else {
-				$this->content->text .= '<form>
+				$this->content->text .= '<div align="center"><form>
 				<input type="submit" onclick="setCookie(\'dyslexic\', \'true\', 60);return false;" name="theme" value="'.get_string("opendyslexic_font", "block_dyslexic").'" id="on">
-				</form> ';	
+				</form></div> ';	
 			}
 
-		$this->content->footer = '<a href="https://geon.github.io/programming/2016/03/03/dsxyliea" target="_blank">'.get_string("effect", "block_dyslexic").'</a>';
-		$this->content->footer .= '</br>';
-		$this->content->footer .= '<a href="http://opendyslexic.org/" target="_blank">'.get_string("readmore", "block_dyslexic").'</a>';
 
+		$url=new moodle_url($CFG->wwwroot.'/blocks/dyslexic/view.php', array('blockid' => $this->instance->id, 'courseid' => $COURSE->id));
+		$this->content->footer = html_writer::link($url, get_string("readmore", "block_dyslexic"));
         return $this->content;
     }
 }

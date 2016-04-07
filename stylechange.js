@@ -33,7 +33,7 @@ function setCookie(cname, cvalue, exdays) {
 } 
 
 
-// Get values from cookies
+// Get value from cookies
 function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
@@ -53,8 +53,11 @@ if (dys == 'true') {
 	// If needed, change CSS to apply OpenDyslexic font
 	var x = document.createElement("STYLE");
 	var t = document.createTextNode("\
-			body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea,select \
-				{font-family: opendyslexic;}\
+			body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea \
+				{font-family: opendyslexic;} \
+			select \
+				{font-family: opendyslexic; \
+				box-sizing: content-box;} \
  			\
 			");
 	x.appendChild(t);
