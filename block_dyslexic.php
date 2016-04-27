@@ -70,7 +70,7 @@ class block_dyslexic extends block_base {
 			}
 
 
-		$url=new moodle_url($CFG->wwwroot.'/blocks/dyslexic/view.php', array('blockid' => $this->instance->id, 'courseid' => $COURSE->id));
+		$url = new moodle_url($CFG->wwwroot.'/blocks/dyslexic/view.php', array('blockid' => $this->instance->id, 'courseid' => $COURSE->id));
 		$this->content->footer = html_writer::link($url, get_string("readmore", "block_dyslexic"));
         return $this->content;
     }

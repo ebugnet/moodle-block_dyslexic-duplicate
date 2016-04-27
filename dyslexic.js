@@ -22,11 +22,11 @@ $(function(){
 	for (var i = 0; i < textNodes.length; i++) {
 		var node = textNodes[i];
 
-		var words = []
+		var words = [];
 
 		var re = /\w+/g;
 		var match;
-		while ((match = re.exec(node.nodeValue)) != null) {
+		while ((match = re.exec(node.nodeValue)) !== null) {
 
 			var word = match[0];
 			var position = match.index;
@@ -38,7 +38,7 @@ $(function(){
 		}
 
 		wordsInTextNodes[i] = words;
-	};
+	}
 
 
 	function messUpWords () {
@@ -62,8 +62,8 @@ $(function(){
 				var after  = node.nodeValue.slice(wordMeta.position + wordMeta.length);
 
 				node.nodeValue = before + messUpWord(word) + after;
-			};
-		};
+			}
+		}
 	}
 
 	function messUpWord (word) {

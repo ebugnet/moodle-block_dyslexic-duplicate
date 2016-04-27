@@ -51,7 +51,7 @@ echo $OUTPUT->header();
 
 
 
-if ($anim!=0) {
+if ($anim != 0) {
 	echo '<script type="text/javascript" src="dyslexic.js"></script>';
 	echo '<h2>'.get_string('moving_title', 'block_dyslexic').'</h2>';	
 	echo ''.get_string('moving_description', 'block_dyslexic').'</br>';
@@ -62,7 +62,7 @@ if ($anim!=0) {
 
 
 
-echo '<h2>'.get_string('howto_title', 'block_dyslexic').'</h2>';	
+echo '<h2>'.get_string('howto_title', 'block_dyslexic').'</h2>';
 echo '<p>'.get_string('howto_description', 'block_dyslexic').'</p>';
 echo '<p><a href="http://opendyslexic.org/" target="_blank">'.get_string('link', 'block_dyslexic').'</a></p>';
 echo '<p>'.get_string('script_info', 'block_dyslexic').'<a href="https://geon.github.io/programming/2016/03/03/dsxyliea" target="_blank">https://geon.github.io/programming/2016/03/03/dsxyliea</a></p></br>';
@@ -72,4 +72,3 @@ echo '<p>'.get_string('wikipedia_title', 'block_dyslexic').' → <a href="'.get_
 echo '<p>'.get_string('wikipedia_description', 'block_dyslexic').'</p>';
 
 echo $OUTPUT->footer();
-?>
