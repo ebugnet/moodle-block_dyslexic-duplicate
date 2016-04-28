@@ -52,6 +52,7 @@ var dys = getCookie("dyslexic");
 if (dys == 'true') {
 	// If needed, change CSS to apply OpenDyslexic font
 	var x = document.createElement("STYLE");
+	/*jshint multistr: true */
 	var t = document.createTextNode("\
 			body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea \
 				{font-family: opendyslexic;} \
