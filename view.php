@@ -50,14 +50,13 @@ $PAGE->requires->jquery();
 echo $OUTPUT->header();
 
 
-
 if ($anim != 0) {
-	echo '<script type="text/javascript" src="dyslexic.js"></script>';
-	echo '<h2>'.get_string('moving_title', 'block_dyslexic').'</h2>';	
-	echo ''.get_string('moving_description', 'block_dyslexic').'</br>';
-	echo '<a href="'.$PAGE->url.'&anim=0" >'.get_string('script_off', 'block_dyslexic').'</a>';
+    echo '<script type="text/javascript" src="dyslexic.js"></script>';
+    echo '<h2>'.get_string('moving_title', 'block_dyslexic').'</h2>';	
+    echo ''.get_string('moving_description', 'block_dyslexic').'</br>';
+    echo '<a href="'.$PAGE->url.'&anim=0" >'.get_string('script_off', 'block_dyslexic').'</a>';
 } else {
-	echo '<a href="'.$PAGE->url.'&anim=1" >'.get_string('script_on', 'block_dyslexic').'</a>';
+    echo '<a href="'.$PAGE->url.'&anim=1" >'.get_string('script_on', 'block_dyslexic').'</a>';
 }
 
 
@@ -65,9 +64,11 @@ if ($anim != 0) {
 echo '<h2>'.get_string('howto_title', 'block_dyslexic').'</h2>';
 echo '<p>'.get_string('howto_description', 'block_dyslexic').'</p>';
 echo '<p><a href="http://opendyslexic.org/" target="_blank">'.get_string('link', 'block_dyslexic').'</a></p>';
-echo '<p>'.get_string('script_info', 'block_dyslexic').'<a href="https://geon.github.io/programming/2016/03/03/dsxyliea" target="_blank">https://geon.github.io/programming/2016/03/03/dsxyliea</a></p></br>';
+echo '<p>'.get_string('script_info', 'block_dyslexic');
+echo '<a href="https://geon.github.io/programming/2016/03/03/dsxyliea" target="_blank">https://geon.github.io/programming/2016/03/03/dsxyliea</a></p></br>';
 echo '<h2>'.get_string('info', 'block_dyslexic').'</h2>';
-echo '<p>'.get_string('wikipedia_title', 'block_dyslexic').' → <a href="'.get_string('wikipedia_url', 'block_dyslexic').'" target="_blank">'.get_string('wikipedia_url', 'block_dyslexic').'</a></p></br>';
+echo '<p>'.get_string('wikipedia_title', 'block_dyslexic').' → ';
+echo '<a href="'.get_string('wikipedia_url', 'block_dyslexic').'" target="_blank">'.get_string('wikipedia_url', 'block_dyslexic').'</a></p></br>';
 
 echo '<p>'.get_string('wikipedia_description', 'block_dyslexic').'</p>';
 

@@ -32,46 +32,46 @@ class block_dyslexic extends block_base {
 
     public function init() {
         $this->title = get_string('pluginname', 'block_dyslexic');
-		$this->content_type = BLOCK_TYPE_TEXT;
+        $this->content_type = BLOCK_TYPE_TEXT;
     }
-	
+
 
     public function instance_allow_multiple() {
         return false;
     }
 
-	public function hide_header() {
-	  return false;
-	}
+    public function hide_header() {
+        return false;
+    }
 
     public function get_content() {
-        global $USER, $PAGE, $CFG, $COURSE;
+        global $CFG, $COURSE;
 
         if ($this->content !== null) {
             return $this->content;
         }
 		
-		// Include Javascript
-		$this->page->requires->js('/blocks/dyslexic/stylechange.js');
-		
+        // Include Javascript.
+        $this->page->requires->js('/blocks/dyslexic/stylechange.js');
+
         $this->content = new stdClass();
-		
-		$this->content->text = get_string("intro", "block_dyslexic");
-		
-			// Display Change font button for each case
+
+        $this->content->text = get_string("intro", "block_dyslexic");
+
+            // Display Change font button for each case.
 			if ($_COOKIE["dyslexic"] == "true") {
-				$this->content->text .= '<div align="center"><form>
-				<input type="submit" onclick="setCookie(\'dyslexic\', \'false\', 60);return false;" name="theme" value="'.get_string("defaut_font", "block_dyslexic").'" id="off">
-				</form></div> ';						
-			} else {
-				$this->content->text .= '<div align="center"><form>
-				<input type="submit" onclick="setCookie(\'dyslexic\', \'true\', 60);return false;" name="theme" value="'.get_string("opendyslexic_font", "block_dyslexic").'" id="on">
-				</form></div> ';	
-			}
+                $this->content->text .= '<div align="center"><form>
+                <input type="submit" onclick="setCookie(\'dyslexic\', \'false\', 60);return false;" name="theme" value="'.get_string("defaut_font", "block_dyslexic").'" id="off">
+                </form></div> ';						
+            } else {
+                $this->content->text .= '<div align="center"><form>
+                <input type="submit" onclick="setCookie(\'dyslexic\', \'true\', 60);return false;" name="theme" value="'.get_string("opendyslexic_font", "block_dyslexic").'" id="on">
+                </form></div> ';	
+            }
 
 
-		$url = new moodle_url($CFG->wwwroot.'/blocks/dyslexic/view.php', array('blockid' => $this->instance->id, 'courseid' => $COURSE->id));
-		$this->content->footer = html_writer::link($url, get_string("readmore", "block_dyslexic"));
+        $url = new moodle_url($CFG->wwwroot.'/blocks/dyslexic/view.php', array('blockid' => $this->instance->id, 'courseid' => $COURSE->id));
+        $this->content->footer = html_writer::link($url, get_string("readmore", "block_dyslexic"));
         return $this->content;
     }
 }

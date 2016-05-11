@@ -23,7 +23,7 @@
  * @author     Éric Bugnet
  */
 
-    $capabilities = array(
+$capabilities = array(
 
     'block/dyslexic:myaddinstance' => array(
         'captype' => 'write',

@@ -34,6 +34,7 @@ $string['moving_description'] = 'Certaines personnes dislexiques ont cette impre
 $string['howto_title'] = 'Fonctionnement';
 $string['howto_description'] = 'Le bloc Mode Dyslexic utilise la technologie Javascript pour modifier l\'affichage du site par l\'intermédiare de balises CSS.</br>Le choix de l\'utilisateur est enregistré dans un cookie.';
 $string['dyslexic:addinstance'] = 'Ajouter un bloc Mode dyslexic';
+$string['dyslexic:myaddinstance'] = 'Ajouter un bloc Mode dyslexic au tableau de bord';
 $string['link'] = 'En savoir plus sur la police OpenDyslexic';
 $string['script_off'] = 'Arrêter l\'animation !';
 $string['script_on'] = 'Relancer l\'animation';

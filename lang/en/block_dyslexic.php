@@ -34,6 +34,7 @@ $string['moving_description'] = 'Some dislexic people have this impression : the
 $string['howto_title'] = 'Working';
 $string['howto_description'] = 'Dyslexic Mod block use Javascript technology to change the site display using CSS.</br>User choice is stocked in cookie.';
 $string['dyslexic:addinstance'] = 'Add a block Mod dyslexic';
+$string['dyslexic:myaddinstance'] = 'Add a block Mod dyslexic to the dashboard';
 $string['link'] = 'Read more on OpenDyslexic font';
 $string['script_off'] = 'Stop animation !';
 $string['script_on'] = 'Reload animation';
